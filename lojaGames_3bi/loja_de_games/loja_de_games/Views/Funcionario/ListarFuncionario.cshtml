@@ -1,0 +1,108 @@
+﻿@model IEnumerable<loja_de_games.Models.Funcionario>
+
+@{
+    ViewBag.Title = "ListarFuncionario";
+}
+
+<p>@Html.ActionLink("Cadastrar Funcionário","Funcionario")</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoFunc)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.NomeFunc)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CPF_Func)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.RgFunc)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Cargo)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoFunc)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeFunc)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF_Func)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.RgFunc)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Celular)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Logradouro)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.ActionLink("Alterar", "AltFuncionario", null, new { cdFunc = item.CodigoFunc }, new { @class = "bnt btn-primary btn-xs" })
+                @Html.ActionLink("Deletar", "DelFuncionario", null, new { cdFunc = item.CodigoFunc }, new { @class = "bnt btn-danger btn-xs" })
+            </td>
+        </tr>
+    }
+</table>
+
