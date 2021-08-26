@@ -1,0 +1,83 @@
+﻿@model loja_de_games.Models.Cliente
+@{
+    ViewBag.Title = "ResultadoCLiente";
+}
+
+<h2>Lista dos dados cliente</h2>
+<filedset>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.NomeCli)
+        </div>
+    </b>
+    <div class="editor-field">
+        Nome
+        @Html.DisplayFor(model => model.NomeCli)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.CPFCli)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.CPFCli)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Email)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Celular)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Celular)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Estado)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Estado)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Cidade)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Logradouro)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+
+</filedset>
+

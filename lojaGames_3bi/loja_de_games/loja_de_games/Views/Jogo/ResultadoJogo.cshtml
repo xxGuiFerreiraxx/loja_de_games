@@ -1,0 +1,92 @@
+﻿@model loja_de_games.Models.Jogo
+
+@{
+    ViewBag.Title = "ResultadoJogo";
+}
+
+<h2>Lista dos dados do jogo</h2>
+<filedset>
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.CodigoJogo)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.CodigoJogo)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.NomeJogo)
+        </div>
+        <div class="editor-field">
+            Nome
+            @Html.DisplayFor(model => model.NomeJogo)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Versao)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Versao)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Desenvolvedor)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Desenvolvedor)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Genero)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Genero)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.FaixaEtaria)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.FaixaEtaria)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Plataforma)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Plataforma)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.AnoLancamento)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.AnoLancamento)
+        </div>
+    </b>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Sinopse)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Sinopse)
+        </div>
+    </b>
+
+</filedset>
+

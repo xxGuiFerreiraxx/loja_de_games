@@ -1,0 +1,93 @@
+﻿@model loja_de_games.Models.Jogo
+
+
+@{
+    ViewBag.Title = "IndexJogo";
+}
+
+<h1>Cadastro de Jogos</h1>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+<fildset>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CodigoJogo)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CodigoJogo)
+        @Html.ValidationMessageFor(model => model.CodigoJogo)
+    </div>
+
+    <div class="editor-label"> 
+        @Html.LabelFor(model => model.NomeJogo)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.NomeJogo)
+        @Html.ValidationMessageFor(model => model.NomeJogo)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Versao)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Versao)
+        @Html.ValidationMessageFor(model => model.Versao)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Desenvolvedor)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Desenvolvedor)
+        @Html.ValidationMessageFor(model => model.Desenvolvedor)
+    </div>
+
+    <div class="editor-label">Gênero
+        @Html.LabelFor(model => model.Genero)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Genero)
+        @Html.ValidationMessageFor(model => model.Genero)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.FaixaEtaria)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.FaixaEtaria)
+        @Html.ValidationMessageFor(model => model.FaixaEtaria)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Plataforma)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Plataforma)
+        @Html.ValidationMessageFor(model => model.Plataforma)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.AnoLancamento)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.AnoLancamento)
+        @Html.ValidationMessageFor(model => model.AnoLancamento)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Sinopse)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Sinopse)
+        @Html.ValidationMessageFor(model => model.Sinopse)
+    </div>
+
+    <p><input type="submit" value="Cadastrar" /></p>
+</fildset>
+
+    @section Scripts{
+            @Scripts.Render("~/bundles/jqueryval");
+        }
+}
+

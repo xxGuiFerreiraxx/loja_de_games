@@ -1,0 +1,110 @@
+﻿@model loja_de_games.Models.Funcionario
+
+@{
+    ViewBag.Title = "ResultadoFuncionario";
+}
+
+<h2>Lista dos dados funcionário</h2>
+<filedset>
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.CodigoFunc)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.CodigoFunc)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.NomeFunc)
+        </div>
+    </b>
+    <div class="editor-field">
+        Nome
+        @Html.DisplayFor(model => model.NomeFunc)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.CPF_Func)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.CPF_Func)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.RgFunc)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.RgFunc)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Email)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Celular)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Celular)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Estado)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Estado)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Cidade)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Logradouro)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Cargo)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Cargo)
+    </div>
+
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+
+</filedset>
+
