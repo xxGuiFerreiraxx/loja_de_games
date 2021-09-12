@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using loja_de_games.Models;
 using loja_de_games.Repositorio;
+using System.Collections.ObjectModel;
 
 namespace loja_de_games.Controllers
 {
@@ -12,6 +13,7 @@ namespace loja_de_games.Controllers
     {
         // GET: Cliente
         public ActionResult Cliente()
+        public ActionResult IndexCliente()
         {
             Cliente cliente = new Cliente();
             return View(cliente);
@@ -20,16 +22,20 @@ namespace loja_de_games.Controllers
         [HttpPost]
 
         public ActionResult CadCliente(Cliente cli)
+        public ActionResult IndexCliente(Cliente cliente)
         {
             ac.CadastrarCliente(cli);
             return View(cli);
+            if (ModelState.IsValid)
+            {
+                return View("ResultadoCliente", cliente);
+            }
+            return View(cliente);
         }
 
         public ActionResult ResultadoCliente()
+        public ActionResult ResultadoCliente(Cliente cliente)
         {
-            var ExibirCli = new AcoesCli();
-            var TodosCli = ExibirCli.ResultadoCliente();
-            return View(TodosCli);
         }
     }
 }

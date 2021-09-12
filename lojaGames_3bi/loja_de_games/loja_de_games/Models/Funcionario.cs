@@ -23,9 +23,8 @@ namespace loja_de_games.Models
 
         [Display(Name = "RG")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
-        public string RgFunc { get; set; }
+        public int RgFunc { get; set; }
 
-    [RegularExpression("[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+", ErrorMessage = "Digite um email válido")]
         public string Email { get; set; }
 
         [RegularExpression ("(^\\+)?[0-9()-]*")]

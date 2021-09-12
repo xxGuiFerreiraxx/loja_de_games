@@ -1,41 +1,100 @@
 ﻿@model IEnumerable<loja_de_games.Models.Cliente>
 
+@model loja_de_games.Models.Cliente
 @{
     ViewBag.Title = "ResultadoCliente";
+    ViewBag.Title = "ResultadoCLiente";
 }
 
 <p>@Html.ActionLink("Cadastrar Cliente", "Cliente")</p>
 <table class="table">
     <tr>
         <th>
+<h2>Lista dos dados cliente</h2>
+<filedset>
+
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.NomeCli)
         </th>
+        </div>
+    </b>
+    <div class="editor-field">
+        Nome
+        @Html.DisplayFor(model => model.NomeCli)
+    </div>
 
         <th>
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.CPFCli)
         </th>
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.CPFCli)
+    </div>
 
         <th>
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.Email)
         </th>
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
 
         <th>
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.Celular)
         </th>
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Celular)
+    </div>
 
         <th>
             @Html.DisplayNameFor(model => model.Cidade)
         </th>
 
         <th>
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.Estado)
         </th>
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Estado)
+    </div>
 
         <th>
+    <b>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Cidade)
+    </div>
+
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.Logradouro)
         </th>
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Logradouro)
+    </div>
 
         <th>
+    <b>
+        <div class="editor-label">
             @Html.DisplayNameFor(model => model.DataNascimento)
         </th>
         <th></th>
@@ -81,5 +140,11 @@
 </tr>
     }
 </table>
+        </div>
+    </b>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
 
+</filedset>
 

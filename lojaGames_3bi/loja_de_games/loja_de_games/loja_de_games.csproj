@@ -172,6 +172,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Jogo\IndexJogo.cshtml" />
     <Content Include="Views\Jogo\ResultadoJogo.cshtml" />
+    <Content Include="Views\Funcionario\IndexFuncionario.cshtml" />
+    <Content Include="Views\Funcionario\ResultadoFuncionario.cshtml" />
+    <Content Include="Views\Cliente\IndexCliente.cshtml" />
     <Content Include="Views\Cliente\ResultadoCliente.cshtml" />
     <Content Include="Views\Funcionario\ListarFuncionario.cshtml" />
     <Content Include="Views\Funcionario\Funcionario.cshtml" />
