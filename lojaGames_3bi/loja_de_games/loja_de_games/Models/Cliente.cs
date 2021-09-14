@@ -17,7 +17,6 @@ namespace loja_de_games.Models
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
         public string CPFCli { get; set; }
 
-        [RegularExpression("[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+")]
         [RegularExpression("[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+", ErrorMessage = "Digite um email válido")]
         public string Email { get; set; }
 

@@ -1,35 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using loja_de_games.Models;
+using loja_de_games.Repositorio;
+using System.Collections.ObjectModel;
 
 namespace loja_de_games.Controllers
 {
     public class JogoController : Controller
     {
         // GET: Jogo
-        public ActionResult IndexJogo()
+        public ActionResult Jogo()
         {
             Jogo jogo = new Jogo();
             return View(jogo);
         }
+        AcoesJogo ac = new AcoesJogo();
         [HttpPost]
 
-        public ActionResult IndexJogo(Jogo jogo)
+        public ActionResult CadJogo(Jogo jogo)
         {
-            if(ModelState.IsValid)
-            {
-                return View("ResultadoJogo", jogo);
-            }
+            ac.CadastrarJogo(jogo);
             return View(jogo);
         }
 
-        public ActionResult ResultadoJogo(Jogo jogo)
+        public ActionResult ResultadoJogo()
         {
-            return View(jogo);
+            var ExibirJogo = new AcoesJogo();
+            var TodosJogos = ExibirJogo.ResultadoJogo();
+            return View(TodosJogos);
         }
 
     }

@@ -11,7 +11,7 @@ namespace loja_de_games.Models
     {
         [Display(Name = "Código do jogo")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
-        public ushort CodigoJogo { get; set; }
+        public string CodigoJogo { get; set; }
 
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
@@ -31,18 +31,18 @@ namespace loja_de_games.Models
 
         [Display(Name = "Faixa etária")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
-        public int FaixaEtaria { get; set; }
+        public string FaixaEtaria { get; set; }
 
         [Display(Name = "Plataforma do jogo")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
         public string Plataforma { get; set; }
 
-        [Display(Name = "Ano de lançamento")]
-        [Required(ErrorMessage = "preenchimento do campo obrigatório")]
-        public int AnoLancamento { get; set; }
-
         [Display(Name = "Sinopse do jogo")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
         public string Sinopse { get; set; }
+
+        [Display(Name = "Ano de lançamento")]
+        [Required(ErrorMessage = "preenchimento do campo obrigatório")]
+        public string AnoLancamento { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace loja_de_games.Models
 
         [Display(Name = "RG")]
         [Required(ErrorMessage = "preenchimento do campo obrigatório")]
-        public int RgFunc { get; set; }
+        public string RgFunc { get; set; }
 
         public string Email { get; set; }
 
